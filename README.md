@@ -48,9 +48,9 @@ Equation with parameters can been obtained with
 
 ## Installation
 
-After downloading the last development version of the package (available
-on request), you can install like so (let us suppose you stored in a
-“tmp” directory):
+After downloading the last development version of the package (Build
+Source Package available on request), you can install it like so (let us
+suppose you stored in a “tmp” directory):
 
 ``` r
 install.packages("c:/tmp/dagnelie_0.1.0.tar.gz", source = TRUE, repos=NULL)
