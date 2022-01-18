@@ -7,9 +7,9 @@
 tarif2(C130, hdom, speciesCode)
 }
 \arguments{
-\item{C130}{A single value of girth in centimeter with hom = 130 cm}
+\item{C130}{A vector of girth in centimeter with hom = 130 cm}
 
-\item{hdom}{A single vale of stand dominant height in meter}
+\item{hdom}{A value of stand dominant height in meter}
 
 \item{speciesCode}{An integer defining species (see table eqNumber)}
 }

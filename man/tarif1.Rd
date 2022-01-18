@@ -7,7 +7,7 @@
 tarif1(C130, speciesCode)
 }
 \arguments{
-\item{C130}{A single value of girth in centimeter with hom = 130 cm}
+\item{C130}{A vector of girth in centimeter with hom = 130 cm}
 
 \item{speciesCode}{An integer defining species (see table eqNumber)}
 }
@@ -19,5 +19,6 @@ Predict tree commercial volume (VC22) as a function of tree girth (C130) for a g
 }
 \examples{
 tarif1(90,1)
+tarif1(c(45,60,70,80),2)
 
 }

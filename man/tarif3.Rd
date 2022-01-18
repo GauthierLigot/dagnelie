@@ -7,9 +7,9 @@
 tarif3(C130, height, speciesCode)
 }
 \arguments{
-\item{C130}{A single value of girth in centimeter with hom = 130 cm}
+\item{C130}{A vector of girth in centimeter with hom = 130 cm}
 
-\item{height}{A single vale of stree height in meter}
+\item{height}{A vector of tree height in meter. It must be of the same length as C130.}
 
 \item{speciesCode}{An integer defining species (see table eqNumber)}
 }
