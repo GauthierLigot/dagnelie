@@ -58,7 +58,7 @@ If you have access to the github, you can use the install_github from the devtoo
 ``` r
 devtools::install_github("gauthierLigot/dagnelie")
 ```
-
+ 
 
 
 ## Example

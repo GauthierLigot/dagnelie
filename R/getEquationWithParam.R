@@ -7,7 +7,8 @@
 #' @return a character showing the equation and the parameters
 #' @export
 #'
-#' @examples
+#' @examples getEquationWithParam(1,2)
+#'
 getEquationWithParam<-function(tarif, speciesCode){
 
   if(!tarif %in% 1:3) stop("ERROR : tarif must be 1, 2 or 3")

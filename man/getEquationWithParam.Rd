@@ -17,3 +17,7 @@ a character showing the equation and the parameters
 \description{
 getEquationWithParam
 }
+\examples{
+getEquationWithParam(1,2)
+
+}
