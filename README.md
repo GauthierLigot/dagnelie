@@ -1,13 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# dagnelie
+# R Package : ‘dagnelie’
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 The goal of dagnelie is to provide a set of functions to use the
-allometric equations fitted by Dagnelie et al. 
+allometric equations fitted by [Dagnelie et
+al. (2013)](http://hdl.handle.net/2268/155356)
 
 Warning : This package is still under development.
 
@@ -16,51 +17,55 @@ the commercial volume of a tree :
 
 The first equation predict the commercial volume (in cubic meter) in
 response to tree girth measured at 1,3 meter (C130 in centimeter). The
-prediction of this equation can be obtained with .
+prediction of this equation can be obtained with `tarif1()`.
 
-*v* = *b*0 + *b*1 \* *C*130 + *b*2 \* *C*130<sup>2</sup> + *b*3 \* *C*130<sup>3</sup>
+*v* = *b*<sub>0</sub> + *b*<sub>1</sub> \* C130 + *b*<sub>2</sub> \* C130<sup>2</sup> + *b*<sub>3</sub> \* C130<sup>3</sup>
 
 The second equation predict the commercial volume (in cubic meter) in
 response to tree girth measured at 1,3 meter (C130 in centimeter) and
-stand dominant height (hdom in meter). The prediction of this equation
-can be obtained with .
+stand dominant height (HDOM in meter). The prediction of this equation
+can be obtained with `tarif2()`.
 
-*v* = *b*0 + *b*1 \* *C*130 + *b*2 \* *C*130<sup>2</sup> + *b*3 \* *C*130<sup>3</sup> + *b*4 \* *h**d**o**m* + *b*5 \* *C*130<sup>2</sup> \* *h**d**o**m*
+*v* = *b*<sub>0</sub> + *b*<sub>1</sub> \* C130 + *b*<sub>2</sub> \* C130<sup>2</sup> + *b*<sub>3</sub> \* C130<sup>3</sup> + *b*<sub>4</sub> \* HDOM + *b*<sub>5</sub> \* C130<sup>2</sup> \* HDOM
 
 The third equation predict the commercial volume (in cubic meter) in
 response to tree girth measured at 1,3 meter (C130 in centimeter) and
-tree height (height in meter). The prediction of this equation can be
-obtained with .
+tree height (H in meter). The prediction of this equation can be
+obtained with `tarif3()`.
 
-*v* = *b*0 + *b*1 \* *C*130 + *b*2 \* *C*130<sup>2</sup> + *b*3 \* *C*130<sup>3</sup> + *b*4 \* *h**e**i**g**h**t* + *b*5 \* *C*130<sup>2</sup> \* *h**e**i**g**h**t*
+*v* = *b*<sub>0</sub> + *b*<sub>1</sub> \* C130 + *b*<sub>2</sub> \* C130<sup>2</sup> + *b*<sub>3</sub> \* C130<sup>3</sup> + *b*<sub>4</sub> \* *H* + *b*<sub>5</sub> \* C130<sup>2</sup> \* *H*
 
 Dagnelie et al. also proposed equation to convert girth measured at 1,5
 m (Belgian style, C150) into C130. The prediction of this equation can
-be obtained with .
+be obtained with `C150toC130()`.
 
-*C*130 = *b*6 \* *C*150 + *b*7
+C130 = *b*<sub>6</sub> \* C150 + *b*<sub>7</sub>
 
 The parameters of these equations depends on the species and species
 codes have been set to use the equations in this package. You can get a
-table with species names and codes with .
+table with species names and codes with `getSpeciesCodes()`.
 
 Equation with parameters can been obtained with
+`getEquationWithParam()`.
 
 ## Installation
 
-After downloading the last development version of the package (Build
-Source Package available on request), you can install it like so (let us
-suppose you stored in a “tmp” directory):
+### Development version
 
-``` r
-install.packages("c:/tmp/dagnelie_0.1.0.tar.gz", source = TRUE, repos=NULL)
-```
-
-If you have access to the github, you can use the install\_github from
-the devtools package:
+You can install the development version of the package using the
+devtools package:
 
 ``` r
 devtools::install_github("gauthierLigot/dagnelie")
+```
+
+### Other version
+
+After downloading a version of the package (available on request), you
+can install it like so (let us suppose you stored in a “tmp” directory):
+
+``` r
+install.packages("c:/tmp/dagnelie_0.1.0.tar.gz", source = TRUE, repos=NULL)
 ```
 
 ## Example

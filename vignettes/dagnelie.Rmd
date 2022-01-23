@@ -1,24 +1,21 @@
 ---
-output: github_document
+title: "R Package dagnelie"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{R Package dagnelie}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
+  comment = "#>"
 )
 ```
+# Objectives and functions
 
-# R Package  : 'dagnelie'
-
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of dagnelie is to provide a set of functions to use the allometric equations fitted by [Dagnelie et al. (2013)](http://hdl.handle.net/2268/155356)
+The goal of dagnelie is to provide a set of functions to use the allometric equations fitted by Dagnelie et al. 
 
 Warning : This package is still under development.
 
@@ -26,19 +23,19 @@ Dagnelie et al proposed three form of tarif function, i.e. to predict the commer
 
 The first equation predict the commercial volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter). The prediction of this equation can be obtained with `tarif1()`.
 
-\[ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 \]
+$$ v = b_0 + b_1 . \mbox{C130} + b_2 . \mbox{C130}^2 + b_3 . \mbox{C130}^3 $$
 
 The second equation predict the commercial volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter) and stand dominant height (HDOM in meter). The prediction of this equation can be obtained with `tarif2()`.
 
-$$ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 + b_4*\mbox{HDOM} + b_5*\mbox{C130}^2*\mbox{HDOM} $$
+$$ v = b_0 + b_1 . \mbox{C130} + b_2 . \mbox{C130}^2 + b_3 . \mbox{C130}^3 + b_4 . \mbox{HDOM} + b_5 . \mbox{C130}^2 . \mbox{HDOM} $$
 
 The third equation predict the commercial volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter) and tree height (H in meter). The prediction of this equation can be obtained with `tarif3()`.
 
-\[ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 + b_4*H + b_5*\mbox{C130}^2*H \]
+$$ v = b_0 + b_1 . \mbox{C130} + b_2 . \mbox{C130}^2 + b_3 . \mbox{C130}^3 + b_4 . H + b_5 . \mbox{C130}^2 . H $$
 
 Dagnelie et al. also proposed equation to convert girth measured at 1,5 m (Belgian style, C150) into C130. The prediction of this equation can be obtained with `C150toC130()`.
 
-\[  \mbox{C130}= b_6*\mbox{C150} + b_7\]
+$$  \mbox{C130}= b_6 . \mbox{C150} + b_7 $$
 
 The parameters of these equations depends on the species and species codes have been set to use the equations in this package. You can get a table with species names and codes with `getSpeciesCodes()`.
 
@@ -47,25 +44,17 @@ Equation with parameters can been obtained with `getEquationWithParam()`.
 
 ## Installation
 
-### Development version
-
-You can install the development version of the package using the devtools package:
-
-``` r
-devtools::install_github("gauthierLigot/dagnelie")
-```
-
-### Other version
-
-After downloading a version of the package (available on request), you can install it like so (let us suppose you stored in a "tmp" directory):
+After downloading the last development version of the package, you can install like so (let us suppose you stored in a "tmp" directory):
 
 ``` r
 install.packages("c:/tmp/dagnelie_0.1.0.tar.gz", source = TRUE, repos=NULL)
 ```
 
+If you have access to the github, you can use the install_github from the devtools package:
 
- 
-
+``` r
+devtools::install_github("gauthierLigot/dagnelie")
+```
 
 ## Example
 
