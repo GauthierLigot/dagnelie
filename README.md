@@ -1,11 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<<<<<<< HEAD
 # R Package : ‘dagnelie’
-=======
-# R Package : dagnelie
->>>>>>> e2ca984de467e13fdcc49cd5ed5e9cd3081e90df
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -56,14 +52,8 @@ Equation with parameters can been obtained with
 
 ### Development version
 
-<<<<<<< HEAD
 You can install the development version of the package using the
 devtools package:
-=======
-After downloading the last development version of the package (Build
-Source Package available on request), you can install it like so (let us
-suppose you stored in a “tmp” directory):
->>>>>>> e2ca984de467e13fdcc49cd5ed5e9cd3081e90df
 
 ``` r
 devtools::install_github("gauthierLigot/dagnelie")
