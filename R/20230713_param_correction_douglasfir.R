@@ -19,4 +19,4 @@ cubeParams2%>%
 
 cubeParams<-cubeParams2
 
-save(cubeParams,eqNumber,file="R/sysdata.rda")
+save(cubeParams,eqNumber,file="R/sysdata.rda", version = 2)
