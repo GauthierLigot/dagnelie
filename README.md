@@ -19,27 +19,27 @@ The first equation predict the commercial volume (in cubic meter) in
 response to tree girth measured at 1,3 meter (C130 in centimeter). The
 prediction of this equation can be obtained with `tarif1()`.
 
-*v* = *b*<sub>0</sub> + *b*<sub>1</sub> \* C130 + *b*<sub>2</sub> \* C130<sup>2</sup> + *b*<sub>3</sub> \* C130<sup>3</sup>
+$$ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 $$
 
 The second equation predict the commercial volume (in cubic meter) in
 response to tree girth measured at 1,3 meter (C130 in centimeter) and
 stand dominant height (HDOM in meter). The prediction of this equation
 can be obtained with `tarif2()`.
 
-*v* = *b*<sub>0</sub> + *b*<sub>1</sub> \* C130 + *b*<sub>2</sub> \* C130<sup>2</sup> + *b*<sub>3</sub> \* C130<sup>3</sup> + *b*<sub>4</sub> \* HDOM + *b*<sub>5</sub> \* C130<sup>2</sup> \* HDOM
+$$ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 + b_4*\mbox{HDOM} + b_5*\mbox{C130}^2*\mbox{HDOM} $$
 
 The third equation predict the commercial volume (in cubic meter) in
 response to tree girth measured at 1,3 meter (C130 in centimeter) and
 tree height (H in meter). The prediction of this equation can be
 obtained with `tarif3()`.
 
-*v* = *b*<sub>0</sub> + *b*<sub>1</sub> \* C130 + *b*<sub>2</sub> \* C130<sup>2</sup> + *b*<sub>3</sub> \* C130<sup>3</sup> + *b*<sub>4</sub> \* *H* + *b*<sub>5</sub> \* C130<sup>2</sup> \* *H*
+$$ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 + b_4*H + b_5*\mbox{C130}^2*H $$
 
 Dagnelie et al. also proposed equation to convert girth measured at 1,5
 m (Belgian style, C150) into C130. The prediction of this equation can
 be obtained with `C150toC130()`.
 
-C130 = *b*<sub>6</sub> \* C150 + *b*<sub>7</sub>
+$$  \mbox{C130}= b_6*\mbox{C150} + b_7$$
 
 The parameters of these equations depends on the species and species
 codes have been set to use the equations in this package. You can get a

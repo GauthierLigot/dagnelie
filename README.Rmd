@@ -63,10 +63,6 @@ After downloading a version of the package (available on request), you can insta
 install.packages("c:/tmp/dagnelie_0.1.0.tar.gz", source = TRUE, repos=NULL)
 ```
 
-
- 
-
-
 ## Example
 
 The volume of a list of trees can be estimated as follows
