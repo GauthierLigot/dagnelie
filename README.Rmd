@@ -40,7 +40,7 @@ Dagnelie et al. also proposed equation to convert girth measured at 1,5 m (Belgi
 
 \[  \mbox{C130}= b_6*\mbox{C150} + b_7\]
 
-The volume of merchandable branch can also be estimated with `volumeOfBanches()`function using the following equation : 
+The volume of merchandable branch can also be estimated with `tarif4()`function using the following equation : 
 
 \[ v = c_0 + c_1 * \mbox{C130} + c_2 * \mbox{C130}^2 + c_3 * \mbox{C130}^3 \]
 
@@ -86,6 +86,6 @@ tarif2(trees$girth,hdom = 15,speciesCode = 2)
 # third equation for one tree
 tarif3(C130 = 50,height = 20,speciesCode = 2)
 # volume of branches (vc22b)
-# volumeOfBranches(C130 = 50,speciesCode = 2)
+tarif4(C130 = 50,speciesCode = 2)
 ```
 

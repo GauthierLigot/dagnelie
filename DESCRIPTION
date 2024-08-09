@@ -1,7 +1,7 @@
 Package: dagnelie
 Type: Package
 Title: Provides allometric relationships for trees in Wallonia
-Version: 0.1.0
+Version: 0.1.1
 Author: Gauthier Ligot
 Maintainer: Gauthier Ligot <gligot@uliege.be>
 Description: The goal of dagnelie is to provide a set of functions to use the allometric equations fitted by Dagnelie et al. 

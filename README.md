@@ -43,7 +43,7 @@ be obtained with `C150toC130()`.
 $$  \mbox{C130}= b_6*\mbox{C150} + b_7$$
 
 The volume of merchandable branch can also be estimated with
-`volumeOfBanches()`function using the following equation :
+`tarif4()`function using the following equation :
 
 $$ v = c_0 + c_1 * \mbox{C130} + c_2 * \mbox{C130}^2 + c_3 * \mbox{C130}^3 $$
 
@@ -154,5 +154,6 @@ tarif2(trees$girth,hdom = 15,speciesCode = 2)
 tarif3(C130 = 50,height = 20,speciesCode = 2)
 #> [1] 0.1814716
 # volume of branches (vc22b)
-# volumeOfBranches(C130 = 50,speciesCode = 2)
+tarif4(C130 = 50,speciesCode = 2)
+#> [1] 0.025584
 ```
