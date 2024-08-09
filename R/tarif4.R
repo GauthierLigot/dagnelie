@@ -22,7 +22,12 @@ tarif4<-function(C130, speciesCode){
   b2<-params$DV
   b3<-params$EV
 
+  if(nrow(params)!=0){
+    v <- b0 + b1*C130 + b2*C130^2 + b3*C130^3
+  }else{
+    # no parameter for this species
+    v <- NA
+  }
 
-  v <- b0 + b1*C130 + b2*C130^2 + b3*C130^3
   return(v)
 }
