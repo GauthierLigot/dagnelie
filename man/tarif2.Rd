@@ -14,7 +14,7 @@ tarif2(C130, hdom, speciesCode)
 \item{speciesCode}{An integer defining species (see table eqNumber)}
 }
 \value{
-tree commercial volume (VC22) in cubic meters
+tree merchantable stem volume (VC22) in cubic meters
 }
 \description{
 Predict tree commercial volume (VC22) as a function of tree girth (C130) and dominant height (m) for a given species

@@ -15,7 +15,7 @@ tarif1(C130, speciesCode)
 tree commercial volume (VC22) in cubic meters
 }
 \description{
-Predict tree commercial volume (VC22) as a function of tree girth (C130) for a given species
+Predict tree merchantable stem volume (VC22) as a function of tree girth (C130) for a given species
 }
 \examples{
 tarif1(90,1)

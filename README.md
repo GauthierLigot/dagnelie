@@ -13,23 +13,24 @@ al. (2013)](http://hdl.handle.net/2268/155356)
 Warning : This package is still under development.
 
 Dagnelie et al proposed three form of tarif function, i.e. to predict
-the commercial volume of a tree :
+the stem merchantable volume of a tree (stem section with girth \< 22
+cm, diameter \< 7 cm) :
 
-The first equation predict the commercial volume (in cubic meter) in
-response to tree girth measured at 1,3 meter (C130 in centimeter). The
-prediction of this equation can be obtained with `tarif1()`.
+The first equation predict the stem merchantable volume (in cubic meter)
+in response to tree girth measured at 1,3 meter (C130 in centimeter).
+The prediction of this equation can be obtained with `tarif1()`.
 
 $$ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 $$
 
-The second equation predict the commercial volume (in cubic meter) in
-response to tree girth measured at 1,3 meter (C130 in centimeter) and
-stand dominant height (HDOM in meter). The prediction of this equation
-can be obtained with `tarif2()`.
+The second equation predict the stem merchantable volume (in cubic
+meter) in response to tree girth measured at 1,3 meter (C130 in
+centimeter) and stand dominant height (HDOM in meter). The prediction of
+this equation can be obtained with `tarif2()`.
 
 $$ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 + b_4*\mbox{HDOM} + b_5*\mbox{C130}^2*\mbox{HDOM} $$
 
-The third equation predict the commercial volume (in cubic meter) in
-response to tree girth measured at 1,3 meter (C130 in centimeter) and
+The third equation predict the stem merchantable volume (in cubic meter)
+in response to tree girth measured at 1,3 meter (C130 in centimeter) and
 tree height (H in meter). The prediction of this equation can be
 obtained with `tarif3()`.
 

@@ -22,23 +22,27 @@ The goal of dagnelie is to provide a set of functions to use the allometric equa
 
 Warning : This package is still under development.
 
-Dagnelie et al proposed three form of tarif function, i.e. to predict the commercial volume of a tree : 
+Dagnelie et al proposed three form of tarif function, i.e. to predict the stem merchantable volume of a tree (stem section with girth < 22 cm, diameter < 7 cm) : 
 
-The first equation predict the commercial volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter). The prediction of this equation can be obtained with `tarif1()`.
+The first equation predict the stem merchantable volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter). The prediction of this equation can be obtained with `tarif1()`.
 
 \[ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 \]
 
-The second equation predict the commercial volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter) and stand dominant height (HDOM in meter). The prediction of this equation can be obtained with `tarif2()`.
+The second equation predict the stem merchantable volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter) and stand dominant height (HDOM in meter). The prediction of this equation can be obtained with `tarif2()`.
 
 $$ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 + b_4*\mbox{HDOM} + b_5*\mbox{C130}^2*\mbox{HDOM} $$
 
-The third equation predict the commercial volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter) and tree height (H in meter). The prediction of this equation can be obtained with `tarif3()`.
+The third equation predict the stem merchantable volume (in cubic meter) in response to tree girth measured at 1,3 meter (C130 in centimeter) and tree height (H in meter). The prediction of this equation can be obtained with `tarif3()`.
 
 \[ v = b_0 + b_1*\mbox{C130} + b_2*\mbox{C130}^2 + b_3*\mbox{C130}^3 + b_4*H + b_5*\mbox{C130}^2*H \]
 
 Dagnelie et al. also proposed equation to convert girth measured at 1,5 m (Belgian style, C150) into C130. The prediction of this equation can be obtained with `C150toC130()`.
 
 \[  \mbox{C130}= b_6*\mbox{C150} + b_7\]
+
+The volume of merchandable branch can also be estimated with `volumeOfBanches()`function using the following equation : 
+
+\[ v = c_0 + c_1 * \mbox{C130} + c_2 * \mbox{C130}^2 + c_3 * \mbox{C130}^3 \]
 
 The parameters of these equations depends on the species and species codes have been set to use the equations in this package. You can get a table with species names and codes with `getSpeciesCodes()`.
 
@@ -81,6 +85,7 @@ tarif1(trees$girth,speciesCode = 2)
 tarif2(trees$girth,hdom = 15,speciesCode = 2)
 # third equation for one tree
 tarif3(C130 = 50,height = 20,speciesCode = 2)
-
+# volume of branches (vc22b)
+volumeOfBranches(C130 = 50,speciesCode = 2)
 ```
 

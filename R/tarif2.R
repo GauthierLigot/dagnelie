@@ -6,7 +6,7 @@
 #' @param hdom A value of stand dominant height in meter
 #' @param speciesCode An integer defining species (see table eqNumber)
 #'
-#' @return tree commercial volume (VC22) in cubic meters
+#' @return tree merchantable stem volume (VC22) in cubic meters
 #' @export
 #'
 #' @examples

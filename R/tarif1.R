@@ -1,6 +1,6 @@
 
 #' @title Predict tree volume from tree girth
-#' @description Predict tree commercial volume (VC22) as a function of tree girth (C130) for a given species
+#' @description Predict tree merchantable stem volume (VC22) as a function of tree girth (C130) for a given species
 #'
 #' @param C130 A vector of girth in centimeter with hom = 130 cm
 #' @param speciesCode An integer defining species (see table eqNumber)
