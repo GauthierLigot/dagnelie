@@ -86,6 +86,6 @@ tarif2(trees$girth,hdom = 15,speciesCode = 2)
 # third equation for one tree
 tarif3(C130 = 50,height = 20,speciesCode = 2)
 # volume of branches (vc22b)
-volumeOfBranches(C130 = 50,speciesCode = 2)
+# volumeOfBranches(C130 = 50,speciesCode = 2)
 ```
 
