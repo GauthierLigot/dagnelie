@@ -10,7 +10,7 @@ The goal of dagnelie is to provide a set of functions to use the
 allometric equations fitted by [Dagnelie et
 al. (2013)](http://hdl.handle.net/2268/155356)
 
-Warning : This package is still under development. A new package Gcuber is also under development.
+Warning : This package is still under development. A new package GCuber is also under development.
 
 Dagnelie et al proposed three form of tarif function, i.e. to predict
 the stem merchantable volume of a tree (stem section with girth \< 22
